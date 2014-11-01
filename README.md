@@ -1,2 +1,2 @@
-nicholesvibrantlife.github.io
+vibrantlife.github.io
 =============================
