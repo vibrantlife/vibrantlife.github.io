@@ -30,33 +30,36 @@ body {
 
 h1 {
   text-align: center;
-  color: blue;
+  color: #775588;
+  font-size: 42px;
 }
 
 li {
-  font-size: 100px;
+  font-size: 28px;
+}
+
+a{
+  padding: 25px;
 }
 
 a:link {
   color: #FFD633;
   text-decoration: none;
-  font-size: 36px;
 }
 
 a:active {
   color: #FFD633;
-  font-size: 36px;
 }
 
 a:visited {
   color: #FFD633;
-  font-size: 36px;
+
 }
 
 a:hover{
   color: #00CC00;
   text-decoration: none;
-  font-size: 50px;
+
 }
 
 footer {
