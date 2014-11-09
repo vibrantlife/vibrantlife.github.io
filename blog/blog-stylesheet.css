@@ -20,7 +20,6 @@ body {
     margin-right: auto;
     text-align: center;
     vertical-align: middle;
-    padding: 20px;
 }
 
 .sm {
@@ -28,35 +27,23 @@ body {
   margin: 10px;
 }
 
-h1 {
-  text-align: center;
-  color: blue;
-}
-
-li {
-  font-size: 100px;
-}
 
 a:link {
   color: #FFD633;
   text-decoration: none;
-  font-size: 36px;
 }
 
 a:active {
   color: #FFD633;
-  font-size: 36px;
 }
 
 a:visited {
   color: #FFD633;
-  font-size: 36px;
 }
 
 a:hover{
   color: #00CC00;
   text-decoration: none;
-  font-size: 50px;
 }
 
 footer {
