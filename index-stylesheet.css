@@ -18,15 +18,13 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  text-align: center;
-  color: white;
-}
+h3 {text-align: center}
 
 #box {
     background-color: #775588;
-    width: 80%;
-    padding: 15px;
+    width: 99%;
+    height: 30px;
+    padding: 10px;
     border: 10px solid #FFD633;
     display: center;
     margin-left: auto;
