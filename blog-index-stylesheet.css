@@ -25,19 +25,11 @@ body {
     vertical-align: middle;
 }
 
-#header * {
-  padding-right: 20px;
-}
-
-#main_img {
-  width: 100%;
-  height: 50%;
-}
-
 #wrapper {
   min-height:100%;
   position:relative;
 }
+
 
 #content {
   padding:10px;
@@ -46,14 +38,13 @@ body {
 
 #footer {
   width:100%;
-  height:40px;
+  height:50px;
   position:absolute;
   bottom:0;
   left:0;
   background:#775588;
   text-align: center;
   padding: 10px;
-   border: 5px solid #FFD633;
 }
 
 .code {
@@ -80,6 +71,10 @@ h1 {
 
 li {
   font-size: 28px;
+}
+
+a{
+  padding: 25px;
 }
 
 a:link {
