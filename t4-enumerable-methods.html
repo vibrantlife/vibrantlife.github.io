@@ -18,21 +18,37 @@
             </ul>
         </div>
     <div id="content">
-      <h2>Enumerable Method - Partition</h2>
+      <h2>Enumerable Method - Map</h2>
       <p>Nichole Shelton</p>
-      <p>November 22, 2014</p>
+      <p>November 23, 2014</p>
 
-      <p>Everyone in the BeyHive stand up! The Rubyists made a method just for us! I kid, but when I started researching which enumerable method I was going to use and I saw the partition method, I won't lie, I did dance in my chair</p>
+      <h3> What's an Enumerable?</h3>
+      By definition an <a href="http://www.ruby-doc.org/core-2.0/Enumerable.html#method-i-each_cons"> enumerable mixin</a> provides collection classes with several traversal and searching methods, and with the ability to sort. In plain English an enumerable allows the programmer to perform various functions on each element in a hash or an array. Pretty nifty right? </p>
 
-      <img src=" https://33.media.tumblr.com/0c219ce3c21574750f145dd0979dfac9/tumblr_mzattuHQd41rfduvxo1_r1_250.gif">
-
-      <p>I love that <a href="http://www.vevo.com/watch/beyonce/Partition-(Explicit-Video)/USSM21302432">song</a>. But I digress. The partition method is pretty sweet. By defintion <a href="http://www.ruby-doc.org/core-2.0/Enumerable.html#method-i-partition">partition</a> returns two arrays, the first containing the elements of enumumerator for which the block evaluates to true, the second containing the rest. Let's check out an example shall we?</p>
-
-      <p>Let's say you have an array and you're looking for all values that have a length of 3 or more. Below you'll find the code and the output</p>
+      <h3>Each Method</h3>
+      <p>So by now you're pretty familiar with the .each method right? The each method allows the programmer to iterate through an array or hash and perform said action to each element within the aray or hash. Enough talk, let's look at some code.</p>
 
       <p class="code">
-           ['happy', "birthday", "to","me"].partition {|s| s.length > 3} <br>
-           => [["happy", "birthday"], ["to", "me"]]
+        thanksgiving_dinner = ["Turkey", "Stuffing", "Mac n Cheese", "Cranberry Sauce"]
+        thanksgiving_dinner.each {|food| food + "makes me think of Thanksgiving."} <br>
+        => ["Turkey", "Stuffing", "Mac n Cheese", "Cranberry Sauce"]
+      </p>
+
+      <p>As you can see from the output, the each method simply returns the original array. Each will not modify your array. That is why we have the map method.</p>
+
+      <h3>Map Method</h3>
+      <p>The map method is awesome. Oh how I wish i knew about it earlier this week. Ce la vie. The map method iterates through the array AND it returns a modified copy of the result of the block AND it doesn't make changes to the original array. Can you say amazeballs? Let's check out the code.</p>
+
+      <p class="code">
+        thanksgiving_dinner.map {|food| food + " makes me think of Thanksgiving."} <br>
+        => ["Turkey makes me think of Thanksgiving.", "Stuffing makes me think of Thanksgiving.", "Mac n Cheese makes me think of Thanksgiving.", "Cranberry Sauce makes me think of Thanksgiving."]
+      </p>
+
+      <p>And you can see when I call the array it is unchanged.</p>
+
+      <p class="code">
+        thanksgiving_dinner <br>
+        => ["Turkey", "Stuffing", "Mac n Cheese", "Cranberry Sauce"]
       </p>
 
       <p>Hope you find this useful!</p>
