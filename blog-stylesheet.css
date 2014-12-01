@@ -2,7 +2,7 @@ html {
     position: absolute;
     min-height: 100%;
     width: 100%;
-    font-family: 'Comfortaa', Verdana;
+    font-family: 'Tahoma';
 }
 
 
@@ -101,4 +101,10 @@ a:hover{
   text-decoration: none;
 }
 
+p {
+  font-size: 16px;
+}
 
+highlight {
+  color: #00CC00;
+}
