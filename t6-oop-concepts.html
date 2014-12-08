@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+
+
+  </head>
+
+  <body>
+
+   <!--  <div id="main_image"> -->
+    <!--   <img src='#'>
+    </div> -->
+    <div id="header">
+            <ul>
+              <a href="index.html">Who's She?</a>
+              <a href="blog_index.html">Think Tank</a>
+              <a href="#">Portfolio</a>
+            </ul>
+        </div>
+    <div id="content">
+      <h2>Blocks, Procs, and Lambdas</h2>
+      <h3>Nichole Shelton</h3>
+      <h3>December 6, 2014</h3>
+
+      <p>
+      Today we'll review the differences between Blocks, Procs, and Lambas. What are these things? Programmers call them closures. What's a closure? It's a way to organize code that you want to run in a program.
+      </p>
+
+      <h3>Blocks</h3>
+      <p>So the first thing that I learned about Blocks that literally blew my mind is they aren't objects! What!!!!!!! Everyone boasts that everything in Ruby is an object. LIARS. Blocks are the exception. Go ahead...look it up, take a deep breath, and come back. Blocks are code that you add into a method as input. You can use blocks in methods with curly braces {} for one line methods or do..end for two line methods. Blocks take input, return information (using return), and use methods like each, map, collect, sample, and a host of others. You can only pass one block per argument list. Also, you have to type out a block each time you use it. Feel the arthritis in those digits? Let's look at the code shall we?</p>
+
+      <p class="code">
+        [0, 1, 2, 3, 4].each {|num| print "#{num}!"}<br>
+        #=> 0!1!2!3!4! => [0, 1, 2, 3, 4]<br>
+        <br>
+        [0, 1, 2, 3, 4].each do |num| <br>
+          print "{num}!" <br>
+        end <br>
+        #=> 0!1!2!3!4! => [0, 1, 2, 3, 4]
+      </p>
+
+      <p>See, same output. </p>
+
+      <h3>Procs</h3>
+      <p>What's a proc you might ask? Procs are objects (ahhh normalcy). With a proc you can ...wait for it.... save your block to a variable and use it later, thus making it more permanent. OMG that's sexy. Additionally, you can call multiple procs to methods. When using procs, you create them similar to the way you create a new Class. In our example, after we create the new proc, we'll use that block of code as an input function. Let's check it out.  </p>
+
+      <p class="code">
+
+        def multiple_procs(proc1, proc2)<br>
+          proc1.call<br>
+          proc2.call<br>
+        end<br>
+        <br>
+        a = Proc.new { puts "I love procs!" }<br>
+        b = Proc.new { puts "I'm all about procs!" }<br>
+          <br>
+        multiple_procs(a,b)<br>
+          <br>
+          #=> I love procs!<br>
+          #=> I'm all about procs!<br>
+      </p>
+
+      <h3>Lambdas</h3>
+      <p>Last, but certainly not least, we have the lambdas. Lambdas are like cousins to procs, but let's be clear: both are Proc objects. There are 2 differences: 1) lambda checks the number of arguments it receives and returns an argument error if they do not match; 2) When lambdas encounter a return statement, it returns their value to the method. Lambdas are pretty flexible about what it allows you to return. Below, we'll look at the differences between procs and lambdas</p>
+
+      <p class="code">
+          def proc_math <br>
+            Proc.new { return 1 + 1 }.call<br>
+            return 2 + 2<br>
+          end
+          <br>
+          def lambda_math<br>
+            lambda { return 1 + 1 }.call<br>
+            return 2 + 2<br>
+          end<br>
+          <br>
+          proc_math # => 2<br>
+          lambda_math # => 4
+      </p>
+
+      <h3>Conclusion</h3>
+      <p>My goodness we covered a bit. Let's review</p>
+        <ul style="list-style-type:square">
+          <li>Blocks are not objects. Blocks are single use. They are unnamed little bits of code you add to other methods. You use them all.the.time. At most, one block can appear in an argument list.</li>
+
+          <li>Procs are objects. Procs are twinsies with blocks, BUT you can store them in variables which means you can pass them into functions and save them for later.</li>
+
+          <li>Lambdas check the number of arguments (procs don't). Lambdas treat return differently than procs. They are used pretty infrequently.</li>
+        </ul>
+         <p>Happy coding!</p>
+
+
+
+
+    </div>
+
+    <div id ="footer">
+        <div class="sm">
+          <a href="https://github.com/vibrantlife"><img src="imgs/GitHub_gray.png"></a>
+        </div>
+
+      <div class="sm">
+        <a href="https://google.com/+NicholeSheltonsVibrantLife"><img src="imgs/Google_gray.png"></a>
+      </div>
+
+      <div class="sm">
+        <a href="https://twitter.com/vibrantlife"><img src="imgs/twittericon_bw.png"></a>
+      </div>
+
+      <div class="sm">
+        <a href="https://www.linkedin.com/in/nicholeshelton"><img src="imgs/linkedinicon_bw.png"></a>
+      </div>
+    </div>
+
+  </body>
+
+
+</html>
