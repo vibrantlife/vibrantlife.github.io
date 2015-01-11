@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+
+
+  </head>
+
+  <body>
+
+   <!--  <div id="main_image"> -->
+    <!--   <img src='#'>
+    </div> -->
+    <div id="header">
+            <ul>
+              <a href="index.html">Who's She?</a>
+              <a href="blog_index.html">Think Tank</a>
+              <a href="#">Portfolio</a>
+            </ul>
+        </div>
+    <div id="content">
+      <h2>An Overview of Regular Expressions</h2>
+      <h3>Nichole Shelton</h3>
+      <h3>December 30, 2014</h3>
+
+      <p>
+      Regular expressions are a way to describe a set of strings based on common characteristics shared by each stirng in the set. They can be used to search, edit, or manipulate text or data (2).Regular expressions were invented or defined by an American mathemetician Stephen Kleene(1).<br>
+<br>
+      Regex has a specific syntax. They're helpful in extracting info from text such as code, log files, spreadsheets, or documents (3).<br>
+<br>
+      Similar to Ruby's "everything is an object", everything in regex is a character. All letters of the alphabet, numbers, and special characters like @$!# are all considered single charachters. You can write your own patterns to match specific sequences of characters (ie: a string!). <br>
+<br>
+      Regex is a string. Just like three, chicken, and '423' are strings so is [B-R]+:. <br>
+<br>
+      Regex is used for 4 main reasons: finding text within a larger body of text, validating a string conforms to a certain format, replacing or inserting text, and splitting strings. A regex engine exists for text editors and most programming languages (3).<br>
+<br>
+      Here are some useful definitions that will help you think about how regular expressions are used (1):
+
+      <p class = "code">
+      literal: A literal is any character we use in a search or matching expression, for example, to find ind in windows the ind is a literal string - each character plays a part in the search, it is literally the string we want to find.<br>
+      <br>
+      metacharcter: A metacharacter is one or more special characters that have a unique meaning and are NOT used as literals in the search expression, for example, the character ^ (circumflex or caret) is a metacharacter.<br>
+      <br>
+      target string: This term describes the string that we will be searching, that is, the string in which we want to find our match or search pattern.<br>
+      <br>
+      search expression: Most commonly called the regular expression. This term describes the search expression that we will be using to search our target string, that is, the pattern we use to find what we want.<br>
+      <br>
+      escape sequence: An escape sequence is a way of indicating that we want to use one of our metacharacters as a literal. In a regular expression an escape sequence involves placing the metacharacter \ (backslash) in front of the metacharacter that we want to use as a literal, for example, if we want to find (s) in the target string window(s) then we use the search expression \(s\) and if we want to find \\file in the target string c:\\file then we would need to use the search expression \\\\file (each \ we want to search for as a literal (there are 2) is preceded by an escape sequence \). 
+      </p>
+
+        Check out this little key to get you started on using regular expressions (4): 
+
+        <p class = "code">
+          ^ &nbsp;&nbsp;&nbsp;&nbsp;Start of a string.<br>
+          $ &nbsp;&nbsp;&nbsp;&nbsp;End of a string.<br>
+          .  &nbsp;&nbsp;&nbsp;&nbsp;Any character (except \n newline)<br>
+          |&nbsp;&nbsp;&nbsp;&nbsp; Alternation.<br>
+          {...}&nbsp;Explicit quantifier notation.<br>
+          [...]&nbsp;Explicit set of characters to match.<br>
+          (...)&nbsp;Logical grouping of part of an expression.    <br>
+          * &nbsp;&nbsp;&nbsp;&nbsp;0 or more of previous expression.<br>
+          + &nbsp;&nbsp;&nbsp;&nbsp;1 or more of previous expression.<br>
+          ? &nbsp;&nbsp;&nbsp;&nbsp;0 or 1 of previous expression; also forces minimal matching when an expression might match several strings within a search string.<br>
+          \ &nbsp;&nbsp;&nbsp;&nbsp;Preceding one of the above, it makes it a literal instead of a special character. Preceding a special matching character, see below.
+
+        </p>
+
+         This barely skimmed the surface of regular expressions.  Here are a couple of tutorials I've used throughout this introductory post that can help provide you with more in depth information: <br>
+         <a href="http://regexone.com/">http://regexone.com/</a> <br>
+         <a href="http://www.rexegg.com/">http://www.rexegg.com/</a><br>
+         <br>
+
+         Resources: <br>
+         1) <a href="http://www.zytrax.com/tech/web/regex.htm">http://www.zytrax.com/tech/web/regex.htm</a><br>
+         2) <a href="http://docs.oracle.com/javase/tutorial/essential/regex/intro.">http://docs.oracle.com/javase/tutorial/essential/regex/intro.</a><br>
+         3) <a href="http://regexone.com/">http://regexone.com/</a><br>
+         4) <a href="http://regexlib.com/CheatSheet.aspx?AspxAutoDetectCookieSupport=1">http://regexlib.com/CheatSheet.aspx?AspxAutoDetectCookieSupport=1</a> 
+<br>
+<br>
+         Good luck and happy coding!
+      </p>
+    </div>
+
+    <div id ="footer">
+        <div class="sm">
+          <a href="https://github.com/vibrantlife"><img src="imgs/GitHub_gray.png"></a>
+        </div>
+
+      <div class="sm">
+        <a href="https://google.com/+NicholeSheltonsVibrantLife"><img src="imgs/Google_gray.png"></a>
+      </div>
+
+      <div class="sm">
+        <a href="https://twitter.com/vibrantlife"><img src="imgs/twittericon_bw.png"></a>
+      </div>
+
+      <div class="sm">
+        <a href="https://www.linkedin.com/in/nicholeshelton"><img src="imgs/linkedinicon_bw.png"></a>
+      </div>
+    </div>
+
+  </body>
+
+
+</html>
